@@ -14,6 +14,7 @@
 		377D9C311B85989E00BF3676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377D9C301B85989E00BF3676 /* Images.xcassets */; };
 		377D9C341B85989E00BF3676 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377D9C321B85989E00BF3676 /* LaunchScreen.xib */; };
 		377D9C401B85989E00BF3676 /* DPHorizontalScrollListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D9C3F1B85989E00BF3676 /* DPHorizontalScrollListTests.m */; };
+		377D9C4B1B8598C500BF3676 /* DPHorizontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D9C4A1B8598C500BF3676 /* DPHorizontalScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		377D9C391B85989E00BF3676 /* DPHorizontalScrollListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPHorizontalScrollListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377D9C3E1B85989E00BF3676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377D9C3F1B85989E00BF3676 /* DPHorizontalScrollListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHorizontalScrollListTests.m; sourceTree = "<group>"; };
+		377D9C491B8598C500BF3676 /* DPHorizontalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHorizontalScrollView.h; sourceTree = "<group>"; };
+		377D9C4A1B8598C500BF3676 /* DPHorizontalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHorizontalScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		377D9C221B85989E00BF3676 /* DPHorizontalScrollList */ = {
 			isa = PBXGroup;
 			children = (
+				377D9C491B8598C500BF3676 /* DPHorizontalScrollView.h */,
+				377D9C4A1B8598C500BF3676 /* DPHorizontalScrollView.m */,
 				377D9C271B85989E00BF3676 /* AppDelegate.h */,
 				377D9C281B85989E00BF3676 /* AppDelegate.m */,
 				377D9C2A1B85989E00BF3676 /* ViewController.h */,
@@ -222,6 +227,7 @@
 				377D9C2C1B85989E00BF3676 /* ViewController.m in Sources */,
 				377D9C291B85989E00BF3676 /* AppDelegate.m in Sources */,
 				377D9C261B85989E00BF3676 /* main.m in Sources */,
+				377D9C4B1B8598C500BF3676 /* DPHorizontalScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
