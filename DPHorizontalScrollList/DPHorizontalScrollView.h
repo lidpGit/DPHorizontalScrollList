@@ -14,7 +14,7 @@
 /**
  *  总列数
  */
-- (NSInteger)numberOfColumnsInTableView;
+- (NSInteger)numberOfColumnsInTableView:(DPHorizontalScrollView *)tableView;
 
 /**
  *  每列显示的view

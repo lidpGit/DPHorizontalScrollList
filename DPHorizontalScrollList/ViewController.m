@@ -29,7 +29,7 @@
 }
 
 #pragma mark - ---------------------- DPHorizontalScrollViewDelegate
-- (NSInteger)numberOfColumnsInTableView{
+- (NSInteger)numberOfColumnsInTableView:(DPHorizontalScrollView *)tableView{
     return 10;
 }
 

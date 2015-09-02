@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8DA9629E-9E51-461D-9441-1FE321E1AE87</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DPHorizontalScrollList</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>68F28C3F6C576B1D787939F1AADAB70D41DAE646</key>
+		<string>https://github.com/lidpGit/DPHorizontalScrollList.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DPHorizontalScrollList.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>68F28C3F6C576B1D787939F1AADAB70D41DAE646</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lidpGit/DPHorizontalScrollList.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>68F28C3F6C576B1D787939F1AADAB70D41DAE646</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68F28C3F6C576B1D787939F1AADAB70D41DAE646</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DPHorizontalScrollList</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,8 +8,6 @@
 
 #import "DPHorizontalScrollView.h"
 
-#import "DPHorizontalScrollView.h"
-
 @interface DPHorizontalScrollView ()
 
 @property (nonatomic, strong) NSMutableArray *visibleViews;         /**< scrollview范围内可视view数组 */
@@ -59,7 +57,7 @@
     [self.visibleViews removeAllObjects];
     
     //获取总列数
-    _totalColumn = [self.scrollViewDelegate numberOfColumnsInTableView];
+    _totalColumn = [self.scrollViewDelegate numberOfColumnsInTableView:self];
     
     //contentSize.width
     CGFloat contentWidth = 0;
@@ -199,7 +197,6 @@
             [self.visibleViewsIndex insertObject:[NSNumber numberWithInteger:preIndex] atIndex:0];
         }
     }
-    
 }
 
 @end
