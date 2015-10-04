@@ -71,6 +71,8 @@
         //通过frame判断将要加载的view是否在scrollview可视范围内
         if ([self isVisibleRange:frame]) {
             UIView *view = [self.scrollViewDelegate tableView:self viewForColumnAtIndex:i];
+            view.tag = i;
+            [self addTagGestureWithView:view];
             view.frame = frame;
             [self addSubview:view];
             
@@ -89,6 +91,13 @@
 - (BOOL)isVisibleRange:(CGRect)frame{
     CGFloat offsetX = self.contentOffset.x;
     return CGRectGetMaxX(frame) > offsetX && frame.origin.x < (self.bounds.size.width + offsetX);
+}
+
+- (void)addTagGestureWithView:(UIView *)view{
+    if (view.gestureRecognizers.count <= 0) {
+        view.userInteractionEnabled = YES;
+        [view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapItemView:)]];
+    }
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview{
@@ -150,6 +159,8 @@
         CGRect frame = CGRectMake(CGRectGetMaxX(lastView.frame), 0, viewWidth, self.bounds.size.height);
         if ([self isVisibleRange:frame]) {
             UIView *view = [self.scrollViewDelegate tableView:self viewForColumnAtIndex:nextIndex];
+            view.tag = nextIndex;
+            [self addTagGestureWithView:view];
             view.frame = frame;
             [self addSubview:view];
             
@@ -190,12 +201,21 @@
         if ([self isVisibleRange:frame]) {
             UIView *view = [self.scrollViewDelegate tableView:self viewForColumnAtIndex:preIndex];
             view.frame = frame;
+            view.tag = preIndex;
+            [self addTagGestureWithView:view];
             [self addSubview:view];
             
             //添加到数组第一个位置
             [self.visibleViews insertObject:view atIndex:0];
             [self.visibleViewsIndex insertObject:[NSNumber numberWithInteger:preIndex] atIndex:0];
         }
+    }
+}
+
+#pragma mark - ---------------------- Action
+- (void)tapItemView:(UITapGestureRecognizer *)sender{
+    if (self.scrollViewDelegate && [self.scrollViewDelegate respondsToSelector:@selector(didSelectViewAtIndex:)]) {
+        [self.scrollViewDelegate didSelectViewAtIndex:sender.view.tag];
     }
 }
 

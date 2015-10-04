@@ -26,6 +26,11 @@
  */
 - (CGFloat)tableView:(DPHorizontalScrollView *)tableView widthForColumnAtIndex:(NSInteger)index;
 
+/**
+ *  点击每列回调
+ */
+- (void)didSelectViewAtIndex:(NSInteger)index;
+
 @end
 
 /**
